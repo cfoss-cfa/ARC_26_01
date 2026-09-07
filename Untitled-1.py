@@ -1,0 +1,2 @@
+x = "hej"
+print(x)
