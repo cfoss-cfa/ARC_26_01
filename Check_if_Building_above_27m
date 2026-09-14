@@ -1,0 +1,19 @@
+import bpy
+from mathutils import Vector
+
+z = []
+
+for obj in bpy.context.scene.objects:
+    if obj.type == "MESH":
+        for corner in obj.bound_box:
+            point = obj.matrix_world @ Vector(corner)
+            z.append(point.z)
+
+height = max(z) - min(z)
+
+print("Bygningshøjde:", round(height, 2), "m")
+
+if height > 27000:
+    print("IKKE OK - Bygningen er over 27 meter")
+else:
+    print("OK - Bygningen er højst 27 meter")
