@@ -1,5 +1,5 @@
 # A2
-## A2a - Use Case
+## A2a - About group
 how much do you agree with the following statement, the number gives your coding level, please provide your total score for your group.
 I am confident coding in Python: Our total score is 6
 Our focus area is aesthetics and facade. 
@@ -13,9 +13,8 @@ The suggested façade materials include metallic materials and natural materials
 
 The report furthermore states that the colours of the exterior facade should correspond to the natural colours of the chosen materials, while white, green and blue shades should be avoided.
 
-## A2b - Claim
-Justification: 
-
+## A2b - Identify Claim
+**Justification** 
 We selected this claim because our focus area is Facade and Aesthetics for the Architectural dicicpline. 
 
 Aesthetic quality is normally evaluated subjectively. However, the report translates part of the desired architectural expression into explicit requirements regarding facade materials and colours.
@@ -25,3 +24,20 @@ This makes it possible to investigate whether part of the architectural intent c
 Rather than attempting to determine whether a facade is generally “beautiful”, the use case therefore focuses on checking specific and measurable aspects of the intended facade expression.
 
 ## A2c - Use Case 
+**Claim**
+Will be checked through an Automated Facade Design Review.
+
+The IFC model is analysed to identify exterior facade elements and retrieve their materials and surface colours. These are compared with the facade requirements defined in the client report.
+
+The check should be performed during the design phase, after facade materials have been assigned but before the design is finalised.
+
+**BIM purpose:** Analyse
+**BIM use case:** Design Review
+
+The process requires information about:
+* Exterior façade elements
+* Materials
+* Surface colours
+* Element GlobalIds
+
+The result identifies facade elements as compliant, non-compliant, or missing information.
