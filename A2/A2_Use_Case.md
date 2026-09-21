@@ -4,7 +4,7 @@ how much do you agree with the following statement, the number gives your coding
 I am confident coding in Python: Our total score is 6
 Our focus area is aesthetics and facade. 
 
-##A2b - Identify Claim
+## A2b - Identify Claim
 We have chosen to focus on Building 2601 – B308.
 
 In Section 6.2 Exterior walls of the client report 26-01-A. The report states that facade materials should align with the aesthetics of the DTU campus.
@@ -31,8 +31,8 @@ The IFC model is analysed to identify exterior facade elements and retrieve thei
 
 The check should be performed during the design phase, after facade materials have been assigned but before the design is finalised.
 
-**BIM purpose:** Analyse
-**BIM use case:** Design Review
+* **BIM purpose:** Analyse
+* **BIM use case:** Design Review
 
 The process requires information about:
 * Exterior façade elements
