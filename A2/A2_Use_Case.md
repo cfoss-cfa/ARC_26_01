@@ -74,3 +74,43 @@ The tool also provides a more consistent and transparent way of checking whether
 
 The BPMN diagram A2e_Tool_Idea summarises the workflow of the proposed tool.
 
+
+## A2f: Information Requirements
+
+For the automated facade compliance tool, we need to extract information about the exterior facade elements, their materials, surface colours, and GlobalIds from the IFC model.
+
+### Required information
+
+| Information | Location in IFC | Available in model? | Use in the tool |
+|---|---|---|---|
+| Exterior status | `Pset_WallCommon.IsExternal` | Yes | Used to identify exterior wall elements. |
+| Material | `IfcMaterial` / `IfcMaterialLayerSet` | Yes | Used to check the facade material against the requirements. |
+| Surface colour | `IfcSurfaceStyle` | Yes | Used to check the facade colour against the requirements. |
+| GlobalId | IFC element attribute `GlobalId` | Yes | Used to identify and report each checked element. |
+
+### Findings in the IFC model
+
+We inspected an exterior wall in the IFC model using Bonsai. The wall has `IsExternal = True` in `Pset_WallCommon`.
+
+The wall uses an `IfcMaterialLayerSet`, which includes the exterior material:
+
+`DTU_Masonry_Brick_Natural_Yellow_Mat`
+
+The corresponding `IfcSurfaceStyle` contains surface colour information. For this material, the displayed colour is:
+
+- RGB: `0.716, 0.697, 0.622`
+- Hex: `#B6B29F`
+
+The wall also contains a `GlobalId`, which can be used to identify the element in the results.
+
+### IfcOpenShell
+
+We will use IfcOpenShell in Python to open the IFC model and extract the required information. We need to learn how to:
+
+- Find exterior facade elements using `IsExternal`.
+- Access material associations and material layers.
+- Access `IfcSurfaceStyle` and its colour information.
+- Read the `GlobalId` of each element.
+- Compare the extracted information with the predefined facade requirements.
+
+This information will allow the tool to classify facade elements as compliant, non-compliant, or missing required information.
