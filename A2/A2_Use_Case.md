@@ -58,4 +58,19 @@ The tool will:
 The scope is highlighted in the flow A2d_Scoped_Use_Case. 
 
 
+## A2e: Tool Idea
+
+Our idea is to develop an OpenBIM tool in Python using IfcOpenShell for automated facade design review.
+
+The tool analyses an IFC model and identifies exterior facade elements. It retrieves their materials and surface colours and compares this information with predefined facade requirements. Each element is then classified as compliant, non-compliant, or missing required information. The GlobalId is used to identify the relevant elements in the IFC model.
+
+### Business and societal value
+
+The tool can reduce the time spent on manual facade reviews and help identify errors earlier in the design process. This can improve quality assurance and reduce the risk of costly changes later in the project.
+
+The tool also provides a more consistent and transparent way of checking whether a facade design meets the specified requirements.
+
+### BPMN diagram
+
+The BPMN diagram A2e_Tool_Idea summarises the workflow of the proposed tool.
 
