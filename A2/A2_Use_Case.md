@@ -41,3 +41,21 @@ The process requires information about:
 * Element GlobalIds
 
 The result identifies facade elements as compliant, non-compliant, or missing information.
+
+This is shown in the Flow 'A2c_USe_Case'
+
+
+## A2d - Tool Idea
+The scope of our tool is the automated analysis of the IFC model.
+
+The tool will:
+- Find exterior facade elements.
+- Read their materials and surface colours.
+- Check if the required information is available.
+- Compare the information with the facade requirements.
+- Identify missing information.
+
+The scope is highlighted in the flow A2d_Scoped_Use_Case. 
+
+
+
