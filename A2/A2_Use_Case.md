@@ -12,12 +12,11 @@ We have chosen to focus on Building 2601 – B308.
 
 In Section 6.2 Exterior walls of the client report 26-01-A. The report states that facade materials should align with the aesthetics of the DTU campus.
 
-The suggested façade materials include metallic materials and natural materials such as: stone, brick, concrete, wood, other bio-based materials. 
+The suggested facade materials include metallic materials and natural materials such as: stone, brick, concrete, wood, other bio-based materials. 
 
 The report furthermore states that the colours of the exterior facade should correspond to the natural colours of the chosen materials, while white, green and blue shades should be avoided.
 
-## A2b - Identify Claim
-**Justification** 
+###Justification
 We selected this claim because our focus area is Facade and Aesthetics for the Architectural dicicpline. 
 
 Aesthetic quality is normally evaluated subjectively. However, the report translates part of the desired architectural expression into explicit requirements regarding facade materials and colours.
@@ -166,4 +165,4 @@ Our tool will be developed in Python using IfcOpenShell and will contain source 
 
 Following the recommendation for the course, we will use the GNU General Public License v3.0 (GPL-3.0) for our project.
 
-The license will be included in the GitHub repository as a `LICENSE` file.
+The license is included in the GitHub repository as a `LICENSE` file.
