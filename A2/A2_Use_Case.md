@@ -1,6 +1,6 @@
 # A2
 ## A2a - About group
-how much do you agree with the following statement, the number gives your coding level, please provide your total score for your group.
+How much do you agree with the following statement, the number gives your coding level, please provide your total score for your group.
 I am confident coding in Python: 
 
 Our total score is 6.
@@ -62,7 +62,7 @@ The tool will:
 The scope is highlighted in the flow A2d_Scoped_Use_Case. 
 
 
-## A2e: Tool Idea
+## A2e - Tool Idea
 
 Our idea is to develop an OpenBIM tool in Python using IfcOpenShell for automated facade design review.
 
@@ -79,10 +79,7 @@ The tool also provides a more consistent and transparent way of checking whether
 The BPMN diagram A2e_Tool_Idea summarises the workflow of the proposed tool.
 
 
-## A2f: Information Requirements
-
-
-## A2f: Information Requirements
+## A2f - Information Requirements
 
 For our automated facade compliance tool, we need to extract information about the different elements that contribute to the external appearance of the facade.
 
@@ -161,3 +158,12 @@ We need to learn how to:
 - Read the `GlobalId` of each checked element.
 - Compare the extracted information with predefined facade requirements.
 - Report elements as compliant, non-compliant or missing information.
+
+
+## A2g - Software License
+
+Our tool will be developed in Python using IfcOpenShell and will contain source code.
+
+Following the recommendation for the course, we will use the GNU General Public License v3.0 (GPL-3.0) for our project.
+
+The license will be included in the GitHub repository as a `LICENSE` file.
