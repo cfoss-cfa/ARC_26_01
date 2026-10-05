@@ -39,7 +39,7 @@ The check should be performed during the design phase, after facade materials ha
 * **BIM use case:** Design Review
 
 The process requires information about:
-* Exterior façade elements
+* Exterior facade elements
 * Materials
 * Surface colours
 * Element GlobalIds
