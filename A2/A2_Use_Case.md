@@ -1,7 +1,10 @@
 # A2
 ## A2a - About group
 how much do you agree with the following statement, the number gives your coding level, please provide your total score for your group.
-I am confident coding in Python: Our total score is 6
+I am confident coding in Python: 
+
+Our total score is 6.
+
 Our focus area is aesthetics and facade. 
 
 ## A2b - Identify Claim
@@ -25,6 +28,7 @@ Rather than attempting to determine whether a facade is generally â€œbeautifulâ€
 
 ## A2c - Use Case 
 **Claim**
+
 Will be checked through an Automated Facade Design Review.
 
 The IFC model is analysed to identify exterior facade elements and retrieve their materials and surface colours. These are compared with the facade requirements defined in the client report.
