@@ -16,7 +16,7 @@ The suggested facade materials include metallic materials and natural materials 
 
 The report furthermore states that the colours of the exterior facade should correspond to the natural colours of the chosen materials, while white, green and blue shades should be avoided.
 
-###Justification
+### Justification
 We selected this claim because our focus area is Facade and Aesthetics for the Architectural dicicpline. 
 
 Aesthetic quality is normally evaluated subjectively. However, the report translates part of the desired architectural expression into explicit requirements regarding facade materials and colours.
