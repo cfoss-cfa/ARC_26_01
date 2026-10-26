@@ -1,125 +1,122 @@
+
 # A3 – Facade Material and Colour Checker
 
 **Course:** DTU 41934  
+**Project Group:** Facade – ARC_26_01  
+**Focus Group:** Architecture  
 **BIM Role:** Facade Designer / Consultant  
 **Level:** Beginner  
-**Format:** Written tutorial with annotated Python code  
 **Tools:** Blender, Bonsai, Python, IfcOpenShell
 
-## 1. Purpose
+## 1. Learning Need and Focus Group
 
-This tutorial demonstrates how to check facade materials and colours in an IFC model using Python and IfcOpenShell.
+**Proposed learning need:** How can architects use IFC data and Python to check facade materials and colours against architectural design guidelines?
 
-The checker is based on our [A2 facade use case](../A2/A2_Use_Case.md) and the DTU Strategic Campus Plan (2022).
+- **Teaching group:** Facade (ARC_26_01)
+- **Focus group:** Architecture
+- **Learning need owner:** To be identified
+- **Focus group agreement:** Pending
 
-The client prefers natural and metallic facade materials such as brick, concrete, wood, stone and metal. White, green and blue exterior colours should be avoided.
+**TODO:** Discuss learning needs with the Architecture Focus Group, agree on the distribution of tutorial topics, identify the learning need owner and confirm the learning objectives.
 
 ## 2. Learning Objectives
 
-After this tutorial, you should be able to:
+After completing this tutorial, students should be able to:
 
-1. Access an IFC model using Python.
-2. Identify potential facade elements.
-3. Extract IFC material information.
-4. Compare materials and colours with design guidelines.
-5. Interpret automated checks and their limitations.
+1. Access an IFC model using Python and IfcOpenShell.
+2. Identify potential facade elements and extract material information.
+3. Compare materials and colours with architectural guidelines.
+4. Interpret automated checks and their limitations.
 
-## 3. Requirements
+## 3. Purpose
 
-- Blender with Bonsai installed.
-- An IFC model loaded in Bonsai.
-- Basic knowledge of Blender. No previous Python experience required.
+This tutorial builds on our [A2 facade use case](../A2/A2_Use_Case.md) and the DTU Strategic Campus Plan (2022).
 
-**Tutorial script:** [facade_material_checker.py](facade_material_checker.py)
+The client recommends natural and metallic facade materials and prefers natural material colours. White, green and blue exterior shades should be avoided.
 
-The script contains explanatory `# NOTE` comments and does not require external CSV files.
+Our Python script demonstrates a preliminary automated check of these guidelines.
 
-## 4. Step-by-Step Tutorial
+## 4. Requirements
 
-### Step 1 – Open the IFC Model
+- Blender with Bonsai installed
+- An IFC model loaded in Bonsai
+- Basic Blender knowledge; no Python experience required
 
-Open Blender/Bonsai and load the IFC model.
+**Script:** [facade_material_checker.py](facade_material_checker.py)
 
-### Step 2 – Open the Script
+The script includes explanatory `# NOTE` comments and does not require external CSV files.
 
-Go to **Scripting** in Blender and open `facade_material_checker.py`.
+## 5. Step-by-Step Tutorial
 
-### Step 3 – Run the Checker
+1. Open Blender/Bonsai and load the IFC model.
+2. Go to the **Scripting** workspace.
+3. Open `facade_material_checker.py`.
+4. Click **Run Script**.
+5. Open Blender's system console and find `A3 SUMMARY`.
 
-Click **Run Script**.
+The script accesses the IFC model using:
 
-The script accesses the active IFC model:
+    model = tool.Ifc.get()
 
-```python
-model = tool.Ifc.get()
-```
+It then:
+- Selects potential facade elements.
+- Filters external walls using `Pset_WallCommon.IsExternal`.
+- Extracts IFC material information.
+- Checks materials against preferred categories.
+- Identifies possible white, green and blue colours.
 
-### Step 4 – Understand the Checks
+## 6. Tested Results
 
-The script:
-
-1. Selects potential facade elements (`IfcWall`, `IfcWindow`, `IfcPlate`, `IfcMember`, `IfcBeam`, `IfcCovering`).
-2. Filters external walls using `Pset_WallCommon.IsExternal`.
-3. Extracts IFC material associations.
-4. Compares materials with preferred categories.
-5. Checks Blender display colours for possible white, green and blue shades.
-
-### Step 5 – Read the Results
-
-Open Blender's system console and find `A3 SUMMARY`.
-
-Example output from our tested IFC model:
+The script was successfully executed on our IFC model.
 
 | Result | Count |
 |---|---:|
 | Selected IFC elements | 1,442 |
 | Material records | 1,615 |
 | Preferred material records | 499 |
-| Material records for review | 1,116 |
+| Material records requiring review | 1,116 |
 | Missing material records | 0 |
 | Elements with colour warnings | 353 |
 
 **Result interpretation:**
 
 - `PREFERRED`: Recognised preferred material category.
-- `REVIEW`: Requires manual assessment.
-- `UNKNOWN`: Material information not found.
+- `REVIEW`: Manual assessment required.
+- `UNKNOWN`: Material information unavailable.
 - `WARNING`: Possible undesirable colour.
 
-These statuses are not final compliance decisions.
+These results are preliminary and do not establish full facade compliance.
 
-## 5. Limitations
+## 7. Limitations
 
-- Not every selected element is confirmed to be part of the visible exterior facade.
-- Exterior wall materials are identified using investigated material-layer patterns.
-- Colour checks use approximate Blender display colours, not verified exterior IFC surface styles.
+- Not all selected elements are confirmed to be visible exterior facade elements.
+- Exterior wall materials are partly identified using known layer patterns.
+- Colour checks use approximate Blender display colours.
 - Hidden foundation materials may be included.
-- The script is model-specific and provides preliminary design guidance only.
+- Material names and checking rules are model-specific.
 
-## 6. Tutorial Testing and Feedback
+## 8. Tutorial Formats and Peer Review
 
-**Status: NOT COMPLETED**
-
-The tutorial has not yet been tested by other students.
-
-**Planned:** Ask another student or group to follow the instructions, run the script and provide feedback on clarity and reproducibility.
-
-Feedback and any resulting improvements will be documented here after testing.
-
-## 7. Tutorial Formats
-
-- **Format 1:** This Markdown tutorial.
-- **Format 2:** Annotated Python script with step-by-step `# NOTE` explanations.
+**Format 1:** This Markdown tutorial.  
+**Format 2:** Annotated Python script with `# NOTE` explanations.
 
 **Video:** Not planned.
 
-## 8. Future Development (A4)
+**Peer-testing:** NOT COMPLETED.
 
-Possible improvements include more reliable exterior-surface identification, IFC surface-style analysis and structured result export.
+**TODO:**
+- Confirm whether these two written formats satisfy the A3 tutorial-format requirements.
+- Ask another student or group to test the tutorial.
+- Collect feedback and document any improvements.
+- Complete the required tutorial presentation and peer-review activities.
+
+## 9. Future Development – A4
+
+Possible improvements include more reliable exterior-surface identification, better IFC colour analysis and structured result export.
 
 ## References
 
-- DTU Strategic Campus Plan (2022).
+- DTU Strategic Campus Plan (2022)
+- [A2 – Facade Use Case](../A2/A2_Use_Case.md)
 - [IfcOpenShell Documentation](https://docs.ifcopenshell.org/)
 - [Bonsai BIM](https://bonsaibim.org/)
-- [Project Repository](https://github.com/cfoss-cfa/ARC_26_01)
