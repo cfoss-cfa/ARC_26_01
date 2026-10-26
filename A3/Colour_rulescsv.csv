@@ -1,0 +1,8 @@
+﻿rule_id;colour_family;action;source;notes;;;;;
+C001;white;WARNING;Client report facade material guidance;Approximate RGB/HSV thresholds must be defined and tested in Python;;;;;
+C002;green;WARNING;Client report facade material guidance;Approximate RGB/HSV thresholds must be defined and tested in Python;;;;;
+C003;blue;WARNING;Client report facade material guidance;Approximate RGB/HSV thresholds must be defined and tested in Python;;;;;
+C004;natural_material_colour;REVIEW;Client report facade material guidance;Cannot reliably establish natural appearance from RGB alone;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;

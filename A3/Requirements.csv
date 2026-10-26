@@ -1,0 +1,8 @@
+﻿rule_id;ifc_class;predefined_type;is_external;ifc_material_name;material_category;material_guideline;colour_guideline;source;notes
+R001;IfcWall;;TRUE;DTU_Masonry_Brick_Natural_Yellow_Mat;brick;preferred;avoid_white_green_blue_and_review_natural_colour;DTU Strategic Campus Plan 2022 via client report;Exterior walls only
+R002;IfcWindow;;;DTU_Wood_Frame_Exterior_Painted_Black_SemiGlossy;wood;preferred;avoid_white_green_blue_and_review_natural_colour;DTU Strategic Campus Plan 2022 via client report;Painted finish needs manual natural-colour review
+R003;IfcWindow;;;DTU_Glass_Double_Clear_Glossy;glass;review;review_manually;Client report facade material guidance;Glazing not explicitly assessed by material recommendations
+R004;IfcPlate;CURTAIN_PANEL;;Glass 22mm (Double);glass;review;review_manually;Client report facade material guidance;Glazing not explicitly assessed by material recommendations
+R005;IfcMember;MULLION;;DTU_Wood_Frame_Exterior_Painted_Black_Mat;wood;preferred;avoid_white_green_blue_and_review_natural_colour;DTU Strategic Campus Plan 2022 via client report;Painted finish needs manual natural-colour review
+R006;IfcBeam;;;UNKNOWN;concrete;preferred;avoid_white_green_blue_and_review_natural_colour;DTU Strategic Campus Plan 2022 via client report;Replace UNKNOWN after checking exact material in IFC
+R007;IfcCovering;MOLDING;;DTU_Metal_Zinc_Natural_SemiMat;metal;preferred;avoid_white_green_blue_and_review_natural_colour;DTU Strategic Campus Plan 2022 via client report;"Visible roof edge included; roof excluded"
