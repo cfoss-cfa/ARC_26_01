@@ -13,7 +13,7 @@
 # materials, including brick, stone, concrete, wood,
 # and other bio-based materials.
 #
-# White, green and blue exterior colours should be avoided. 
+# White, green and blue exterior colours should be avoided.  
 # Natural material colours are preferred.
 #
 # IMPORTANT:
