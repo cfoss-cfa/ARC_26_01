@@ -1,5 +1,5 @@
 
-# A3 – Facade Material and Colour Checker
+# A3 - Facade Material and Colour Checker
 
 **Course:** DTU 41934  
 **Project Group:** Facade – ARC_26_01  
