@@ -1,0 +1,66 @@
+import bonsai.tool as tool
+import ifcopenshell.util.element
+import ifcopenshell.util.placement
+import math
+
+ifc = tool.Ifc.get()
+
+MAX_DISTANCE = 5000  # mm
+
+stairs = ifc.by_type("IfcStair")
+doors = ifc.by_type("IfcDoor")
+
+external_doors = []
+
+# Find udvendige døre
+for door in doors:
+    psets = ifcopenshell.util.element.get_psets(door)
+
+    is_external = False
+
+    if "Pset_DoorCommon" in psets:
+        is_external = psets["Pset_DoorCommon"].get("IsExternal", False)
+
+    if is_external:
+        external_doors.append(door)
+
+
+def get_position(element):
+    matrix = ifcopenshell.util.placement.get_local_placement(
+        element.ObjectPlacement
+    )
+
+    return (
+        matrix[0][3],
+        matrix[1][3],
+        matrix[2][3]
+    )
+
+
+stairs_with_exit = 0
+
+for stair in stairs:
+
+    stair_pos = get_position(stair)
+
+    for door in external_doors:
+
+        door_pos = get_position(door)
+
+        distance = math.sqrt(
+            (stair_pos[0] - door_pos[0]) ** 2 +
+            (stair_pos[1] - door_pos[1]) ** 2
+        )
+
+        if distance <= MAX_DISTANCE:
+            stairs_with_exit += 1
+            print(stair.Name, "- har adgang til udvendig dør")
+            break
+
+
+print("Antal trapper med adgang til open air:", stairs_with_exit)
+
+if stairs_with_exit >= 2:
+    print("OK - Der er mindst 2 staircases med direct access to open air")
+else:
+    print("IKKE OK - Der er færre end 2 staircases med direct access to open air")
