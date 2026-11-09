@@ -10,7 +10,7 @@
 
 ### Summary
 
-This how-to explains how we use GitHub to organise, access and share files in a BIM project. It covers navigating repositories, downloading files, reading documentation and avoiding common problems when working with shared project files.
+This how-to explains how we use GitHub to organise and share files in BIM projects. It covers navigating repositories, downloading files, understanding documentation, and using Git commands such as commit, push and pull to collaborate and manage file versions.
 
 ## Why We Use GitHub in BIM Projects
 
