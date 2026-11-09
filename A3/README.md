@@ -7,9 +7,9 @@
 
 ## Why We Use GitHub
 
-During our BIM project, we have used GitHub to organise and share project files, including Python scripts and documentation.
+During our BIM project, we have used GitHub to organize and share project files, including Python scripts and documentation.
 
-GitHub makes it easier to keep everything in one place, especially when several people are working on the same project. However, some features can be a little confusing at first, particularly when downloading files or finding the correct version.
+GitHub makes it easier to keep everything in one place, especially when doing group project. However, some features can be a little confusing at first, particularly when downloading files or finding the correct version.
 
 This how-to explains some of the basic functions we have found useful when working with GitHub.
 
@@ -21,11 +21,11 @@ For our project, we use:
 
 [ARC_26_01 – GitHub Repository](https://github.com/cfoss-cfa/ARC_26_01)
 
-The repository contains folders and files organised by project activities.
+The repository contains folders and files organized by activities.
 
-Click on a folder to explore its contents, or select a file to view it directly in your browser.
+Click on a folder to see its contents, or select a file to view it directly in your browser.
 
-**Something to keep in mind:** GitHub can look like a regular file explorer, but clicking on a file usually opens a preview rather than downloading it.
+**Something to keep in mind:** GitHub can look like a regular file explorer, BUT clicking on a file usually opens a preview rather than downloading it.
 
 ## 2. How to Download Project Files
 
@@ -33,7 +33,7 @@ There are two ways to download files from GitHub.
 
 **Download a single file:**
 
-1. Open the file you want.
+1. Open the intended you want.
 2. Click the download icon or select **Download raw file**.
 3. Save the file to your computer.
 
