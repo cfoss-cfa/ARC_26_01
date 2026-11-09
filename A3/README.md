@@ -1,7 +1,7 @@
-# A3 – How to Use GitHub for a BIM Project
+# A3 How to Use GitHub for a BIM Project
 
-**Course:** DTU 41934 – Advanced BIM  
-**Project Group:** Facade – ARC_26_01  
+**Course:** DTU 41934 Advanced BIM  
+**Project Group:** Facade, ARC_26_01  
 **Focus Group:** Architecture  
 **Tools:** GitHub, Web Browser, VS Code (optional)
 
