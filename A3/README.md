@@ -3,85 +3,82 @@
 **Course:** DTU 41934 – Advanced BIM  
 **Project Group:** Facade – ARC_26_01  
 **Focus Group:** Architecture  
-**BIM Role:** BIM Designer / Architect  
-**Level:** Beginner  
-**Tools:** GitHub, Web Browser
+**Tools:** GitHub, Web Browser, VS Code (optional)
 
-## 1. Learning Need
+## Why We Use GitHub
 
-How can architecture students use GitHub to access, download and understand files shared in a BIM project?
+During our BIM project, we have used GitHub to organise and share project files, including Python scripts and documentation.
 
-## 2. Learning Objectives
+GitHub makes it easier to keep everything in one place, especially when several people are working on the same project. However, some features can be a little confusing at first, particularly when downloading files or finding the correct version.
 
-After completing this tutorial, students should be able to:
+This how-to explains some of the basic functions we have found useful when working with GitHub.
 
-1. Navigate a GitHub repository.
-2. Find and download project files.
-3. Understand how a README file explains a project.
+## 1. How to Find and Navigate a Repository
 
-## 3. Purpose
+Go to [GitHub](https://github.com) and open the repository you want to work with.
 
-GitHub is a platform for storing, organising and sharing project files. In BIM projects, it can be used to share Python scripts, documentation and workflows between team members.
+For our project, we use:
 
-This tutorial introduces the basic functions of GitHub without requiring any programming experience.
+[ARC_26_01 – GitHub Repository](https://github.com/cfoss-cfa/ARC_26_01)
 
-## 4. Requirements
+The repository contains folders and files organised by project activities.
 
-- A computer with internet access
-- A web browser
-- Access to a public GitHub repository
-- No previous GitHub experience required
+Click on a folder to explore its contents, or select a file to view it directly in your browser.
 
-**Estimated time:** 5–10 minutes
+**Something to keep in mind:** GitHub can look like a regular file explorer, but clicking on a file usually opens a preview rather than downloading it.
 
-## 5. Step-by-Step Tutorial
+## 2. How to Download Project Files
 
-### Step 1 – Open GitHub
+There are two ways to download files from GitHub.
 
-Go to [github.com](https://github.com) and open a public BIM project repository.
+**Download a single file:**
 
-*Insert screenshot: GitHub repository homepage.*
+1. Open the file you want.
+2. Click the download icon or select **Download raw file**.
+3. Save the file to your computer.
 
-### Step 2 – Explore the Repository
+**Download the entire repository:**
 
-Identify the main folders and files.
+1. Go to the repository's main page.
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
+4. Extract the ZIP file on your computer.
 
-Click on a folder to view its contents.
+**Something that can be tricky:** Downloading a repository as a ZIP gives you a copy of the files, but it does not automatically update when someone changes the files on GitHub. You will need to download the updated version again or use Git to synchronise changes.
 
-*Insert screenshot: Repository file structure.*
+## 3. How to Understand a README File
 
-### Step 3 – Read the README
+Most repositories contain a file called `README.md`.
 
-Open the `README.md` file.
+This is usually a good place to start because it often explains what the project is about, how the files are organised and how to use them.
 
-Read the project description, instructions and available documentation.
+The `.md` extension stands for Markdown, a simple format used for writing documentation.
 
-*Insert screenshot: README file.*
+**Our advice:** Before downloading or opening scripts, check the README. It can save time by explaining which files are relevant and whether additional software is required.
 
-### Step 4 – Download a File
+## 4. How to Open a Python File in VS Code
 
-Select a file, such as a Python script, and click **Download raw file**.
+Some BIM projects include Python scripts that can be viewed or edited in VS Code.
 
-Alternatively, use **Code → Download ZIP** to download the entire repository.
+1. Download the Python file from GitHub.
+2. Open VS Code.
+3. Select **File → Open File**.
+4. Choose the downloaded `.py` file.
 
-*Insert screenshot: Download options.*
+You can now read the script and make changes if needed.
 
-### Step 5 – Open the Downloaded File
+**Something to be aware of:** Opening a Python file in VS Code does not mean it can automatically run. Some scripts require specific Python libraries or software environments, such as Blender/Bonsai.
 
-Locate the downloaded file on your computer.
+For example, a script that uses Bonsai to access an IFC model may need to run inside Blender rather than directly in VS Code.
 
-Open it using an appropriate application, such as VS Code for Python scripts.
+## 5. How to Avoid Common Problems
 
-## 6. Expected Result
+A few things are worth checking when working with GitHub:
 
-Students should now be able to navigate a GitHub repository, understand its basic structure and download files for use in their own BIM projects.
+- **Wrong file version:** Make sure you are viewing the correct branch and latest relevant version.
+- **Missing files:** Check whether the file is located inside another folder.
+- **Downloading instead of editing:** Changes to downloaded files are not automatically uploaded to GitHub.
+- **File extensions:** Keep the original extension, such as `.py` or `.md`, when saving files.
+- **Overwriting work:** If several people edit the same files, coordinate changes to avoid losing each other's work.
 
-## 7. Peer Testing
-
-Ask another student to follow the tutorial without assistance.
-
-Collect feedback on whether the instructions are clear and easy to follow.
-
-## 8. Conclusion
-
-This tutorial provides a simple introduction to GitHub and demonstrates how it can support file sharing and collaboration in BIM projects.
+GitHub becomes much easier to work with once you understand the difference between viewing files online, downloading copies and updating the actual repository.
