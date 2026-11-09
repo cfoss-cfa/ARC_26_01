@@ -1,122 +1,87 @@
+# A3 – How to Use GitHub for a BIM Project
 
-# A3 - Facade Material and Colour Checker
-
-**Course:** DTU 41934  
+**Course:** DTU 41934 – Advanced BIM  
 **Project Group:** Facade – ARC_26_01  
 **Focus Group:** Architecture  
-**BIM Role:** Facade Designer / Consultant  
+**BIM Role:** BIM Designer / Architect  
 **Level:** Beginner  
-**Tools:** Blender, Bonsai, Python, IfcOpenShell
+**Tools:** GitHub, Web Browser
 
-## 1. Learning Need and Focus Group
+## 1. Learning Need
 
-**Proposed learning need:** How can architects use IFC data and Python to check facade materials and colours against architectural design guidelines?
-
-- **Teaching group:** Facade (ARC_26_01)
-- **Focus group:** Architecture
-- **Learning need owner:** To be identified
-- **Focus group agreement:** Pending
-
-**TODO:** Discuss learning needs with the Architecture Focus Group, agree on the distribution of tutorial topics, identify the learning need owner and confirm the learning objectives.
+How can architecture students use GitHub to access, download and understand files shared in a BIM project?
 
 ## 2. Learning Objectives
 
 After completing this tutorial, students should be able to:
 
-1. Access an IFC model using Python and IfcOpenShell.
-2. Identify potential facade elements and extract material information.
-3. Compare materials and colours with architectural guidelines.
-4. Interpret automated checks and their limitations.
+1. Navigate a GitHub repository.
+2. Find and download project files.
+3. Understand how a README file explains a project.
 
 ## 3. Purpose
 
-This tutorial builds on our [A2 facade use case](../A2/A2_Use_Case.md) and the DTU Strategic Campus Plan (2022).
+GitHub is a platform for storing, organising and sharing project files. In BIM projects, it can be used to share Python scripts, documentation and workflows between team members.
 
-The client recommends natural and metallic facade materials and prefers natural material colours. White, green and blue exterior shades should be avoided.
-
-Our Python script demonstrates a preliminary automated check of these guidelines.
+This tutorial introduces the basic functions of GitHub without requiring any programming experience.
 
 ## 4. Requirements
 
-- Blender with Bonsai installed
-- An IFC model loaded in Bonsai
-- Basic Blender knowledge; no Python experience required
+- A computer with internet access
+- A web browser
+- Access to a public GitHub repository
+- No previous GitHub experience required
 
-**Script:** [facade_material_checker.py](facade_material_checker.py)
-
-The script includes explanatory `# NOTE` comments and does not require external CSV files.
+**Estimated time:** 5–10 minutes
 
 ## 5. Step-by-Step Tutorial
 
-1. Open Blender/Bonsai and load the IFC model.
-2. Go to the **Scripting** workspace.
-3. Open `facade_material_checker.py`.
-4. Click **Run Script**.
-5. Open Blender's system console and find `A3 SUMMARY`.
+### Step 1 – Open GitHub
 
-The script accesses the IFC model using:
+Go to [github.com](https://github.com) and open a public BIM project repository.
 
-    model = tool.Ifc.get()
+*Insert screenshot: GitHub repository homepage.*
 
-It then:
-- Selects potential facade elements.
-- Filters external walls using `Pset_WallCommon.IsExternal`.
-- Extracts IFC material information.
-- Checks materials against preferred categories.
-- Identifies possible white, green and blue colours.
+### Step 2 – Explore the Repository
 
-## 6. Tested Results
+Identify the main folders and files.
 
-The script was successfully executed on our IFC model.
+Click on a folder to view its contents.
 
-| Result | Count |
-|---|---:|
-| Selected IFC elements | 1,442 |
-| Material records | 1,615 |
-| Preferred material records | 499 |
-| Material records requiring review | 1,116 |
-| Missing material records | 0 |
-| Elements with colour warnings | 353 |
+*Insert screenshot: Repository file structure.*
 
-**Result interpretation:**
+### Step 3 – Read the README
 
-- `PREFERRED`: Recognised preferred material category.
-- `REVIEW`: Manual assessment required.
-- `UNKNOWN`: Material information unavailable.
-- `WARNING`: Possible undesirable colour.
+Open the `README.md` file.
 
-These results are preliminary and do not establish full facade compliance.
+Read the project description, instructions and available documentation.
 
-## 7. Limitations
+*Insert screenshot: README file.*
 
-- Not all selected elements are confirmed to be visible exterior facade elements.
-- Exterior wall materials are partly identified using known layer patterns.
-- Colour checks use approximate Blender display colours.
-- Hidden foundation materials may be included.
-- Material names and checking rules are model-specific.
+### Step 4 – Download a File
 
-## 8. Tutorial Formats and Peer Review
+Select a file, such as a Python script, and click **Download raw file**.
 
-**Format 1:** This Markdown tutorial.  
-**Format 2:** Annotated Python script with `# NOTE` explanations.
+Alternatively, use **Code → Download ZIP** to download the entire repository.
 
-**Video:** Not planned.
+*Insert screenshot: Download options.*
 
-**Peer-testing:** NOT COMPLETED.
+### Step 5 – Open the Downloaded File
 
-**TODO:**
-- Confirm whether these two written formats satisfy the A3 tutorial-format requirements.
-- Ask another student or group to test the tutorial.
-- Collect feedback and document any improvements.
-- Complete the required tutorial presentation and peer-review activities.
+Locate the downloaded file on your computer.
 
-## 9. Future Development – A4
+Open it using an appropriate application, such as VS Code for Python scripts.
 
-Possible improvements include more reliable exterior-surface identification, better IFC colour analysis and structured result export.
+## 6. Expected Result
 
-## References
+Students should now be able to navigate a GitHub repository, understand its basic structure and download files for use in their own BIM projects.
 
-- DTU Strategic Campus Plan (2022)
-- [A2 – Facade Use Case](../A2/A2_Use_Case.md)
-- [IfcOpenShell Documentation](https://docs.ifcopenshell.org/)
-- [Bonsai BIM](https://bonsaibim.org/)
+## 7. Peer Testing
+
+Ask another student to follow the tutorial without assistance.
+
+Collect feedback on whether the instructions are clear and easy to follow.
+
+## 8. Conclusion
+
+This tutorial provides a simple introduction to GitHub and demonstrates how it can support file sharing and collaboration in BIM projects.
