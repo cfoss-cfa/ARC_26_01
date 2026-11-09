@@ -4,14 +4,19 @@
 **Project Group:** Facade, ARC_26_01  
 **Focus Group:** Architecture  
 **Tools:** GitHub, Web Browser, VS Code (optional)
+**BIM Role:** OpenBIM Modeller  
+**Learning Level:** 1  
+**Focus Area:** Architecture
 
-## Why We Use GitHub
+### Summary
 
-During our BIM project, we have used GitHub to organize and share project files, including Python scripts and documentation.
+This how-to explains how we use GitHub to organise, access and share files in a BIM project. It covers navigating repositories, downloading files, reading documentation and avoiding common problems when working with shared project files.
 
-GitHub makes it easier to keep everything in one place, especially when doing group project. However, some features can be a little confusing at first, particularly when downloading files or finding the correct version.
+## Why We Use GitHub in BIM Projects
 
-This how-to explains some of the basic functions we have found useful when working with GitHub.
+In our Advanced BIM course, we use GitHub to share and organise project files, Python scripts and documentation. Since BIM projects often involve several people working on the same files, it is useful to have one shared place where changes can be tracked.
+
+We have found GitHub particularly useful for keeping track of different file versions and sharing our work within the group. However, understanding the difference between saving a file locally and updating it on GitHub can be a little tricky at first.
 
 ## 1. How to Find and Navigate a Repository
 
@@ -71,7 +76,30 @@ You can now read the script and make changes if needed.
 
 For example, a script that uses Bonsai to access an IFC model may need to run inside Blender rather than directly in VS Code.
 
-## 5. How to Avoid Common Problems
+## 5. How to Commit, Push and Pull Changes
+
+When working on a shared GitHub project, downloading files is not always enough. If several people are editing the same project, it is important to keep the files updated.
+
+Three useful Git functions are:
+
+- **Commit:** Saves a snapshot of your changes in your local Git repository.
+- **Push:** Uploads your local commits to GitHub.
+- **Pull:** Downloads and integrates changes made by others into your local repository.
+
+### How to Do It in VS Code
+
+First, clone the GitHub repository to your computer and open the folder in VS Code. Make sure Git is installed.
+
+1. **Pull:** Open the Source Control panel, click the `...` menu and select **Pull** to get the latest changes.
+2. **Edit:** Make changes to a file and save it.
+3. **Commit:** In Source Control, review your changes, stage the files using `+`, write a short commit message and click **Commit**.
+4. **Push:** Select **Push** or **Sync Changes** to upload your commits to GitHub.
+
+**Something we found tricky:** Saving a file in VS Code does not automatically update it on GitHub. You need to commit and push your changes. Also, if someone else has updated the same file, you may need to pull their changes and resolve any conflicts before pushing.
+
+**Our advice:** Always pull before starting work, and use clear commit messages so other group members can understand what has changed.
+
+## 6. How to Avoid Common Problems
 
 A few things are worth checking when working with GitHub:
 
