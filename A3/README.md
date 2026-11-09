@@ -8,9 +8,9 @@
 
 **Tools:** GitHub, Web Browser, VS Code (optional)
 
-**BIM Role:** OpenBIM Modeller  
+**BIM Role:** OpenBIM Manager  
 
-**Learning Level:** 1  
+**Learning Level:** 3  
 
 **Focus Area:** Architecture
 
@@ -20,7 +20,7 @@ This how-to explains how we use GitHub to organise and share files in BIM projec
 
 ## Why We Use GitHub in BIM Projects
 
-In our Advanced BIM course, we use GitHub to share and organise project files, Python scripts and documentation. Since BIM projects often involve several people working on the same files, it is useful to have one shared place where changes can be tracked.
+In our Advanced BIM course, we use GitHub to share and organize project files, Python scripts and documentation. Since BIM projects often involve several people working on the same files, it is useful to have one shared place where changes can be tracked.
 
 We have found GitHub particularly useful for keeping track of different file versions and sharing our work within the group. However, understanding the difference between saving a file locally and updating it on GitHub can be a little tricky at first.
 
@@ -44,7 +44,7 @@ There are two ways to download files from GitHub.
 
 **Download a single file:**
 
-1. Open the intended you want.
+1. Open the intended file.
 2. Click the download icon or select **Download raw file**.
 3. Save the file to your computer.
 
@@ -63,7 +63,7 @@ Most repositories contain a file called `README.md`.
 
 This is usually a good place to start because it often explains what the project is about, how the files are organised and how to use them.
 
-The `.md` extension stands for Markdown, a simple format used for writing documentation.
+The `.md` stands for Markdown, a format used for writing documentation.
 
 **Our advice:** Before downloading or opening scripts, check the README. It can save time by explaining which files are relevant and whether additional software is required.
 
@@ -76,7 +76,7 @@ Some BIM projects include Python scripts that can be viewed or edited in VS Code
 3. Select **File → Open File**.
 4. Choose the downloaded `.py` file.
 
-You can now read the script and make changes if needed.
+You can now read the script and make changes.
 
 **Something to be aware of:** Opening a Python file in VS Code does not mean it can automatically run. Some scripts require specific Python libraries or software environments, such as Blender/Bonsai.
 
@@ -103,7 +103,7 @@ First, clone the GitHub repository to your computer and open the folder in VS Co
 
 **Something we found tricky:** Saving a file in VS Code does not automatically update it on GitHub. You need to commit and push your changes. Also, if someone else has updated the same file, you may need to pull their changes and resolve any conflicts before pushing.
 
-**Our advice:** Always pull before starting work, and use clear commit messages so other group members can understand what has changed.
+**Our advice:** Always pull before starting work.
 
 ## 6. How to Avoid Common Problems
 
