@@ -116,3 +116,8 @@ A few things are worth checking when working with GitHub:
 - **Overwriting work:** If several people edit the same files, coordinate changes to avoid losing each other's work.
 
 GitHub becomes much easier to work with once you understand the difference between viewing files online, downloading copies and updating the actual repository.
+
+
+## Additional How-to: Python and IFC Data
+
+As a practical extension of this GitHub how-to, we have created a Jupyter Notebook demonstrating how to install the Python packages, load an IFC model and explore BIM data using IfcOpenShell.
