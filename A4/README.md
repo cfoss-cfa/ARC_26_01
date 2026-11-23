@@ -6,6 +6,9 @@
 ## Purpose
 This Python tool identifies potential material and colour issues in facades using IFC parameters data. It supports the design review process by reducing manual checking and flagging elements that may need further attention.
 
+## Problem Background
+The tool builds on our A2 use case, focusing on the time-consuming process of manually reviewing facade materials and colours. The screening criterias comes from DTU Campus design guidelines and are used as initialss reviews rather than verified compliance rules.
+
 ## Design Stage and Application
 
 **Advanced Building Design Level:** C - Design Development (proposed).
@@ -47,6 +50,6 @@ The tool uses IFC material assignments, available surface colours and exterior c
 The IDS file describes the expected IFC information requirements and can be validated independently.
 
 ## Limitations
-The results depend on the quality and completeness of the IFC model. Some surface colours or materials may not be available, and uncertain exterior classifications will result in the need for manuel cheking. 
+The results depend on the quality and completeness of the IFC model. Uncertain exterior classifications are reported but do not automatically require manual review. Missing or unclear material and colour information requires further checking.
 
 The tool is intended as a screening aid, not a final compliance assessment.
