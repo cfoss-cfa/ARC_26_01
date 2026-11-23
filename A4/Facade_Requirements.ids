@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids:ids xmlns:ids="http://standards.buildingsmart.org/IDS"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://standards.buildingsmart.org/IDS https://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <ids:info>
+    <ids:title>A4 - Facade Material and Colour Checker - IFC Data Requirements</ids:title>
+    <ids:description>Draft IDS for checking material assignments on IFC element classes screened by the A4 Python tool. This IDS does not validate surface colours, outward-facing surfaces, or compliance with DTU Campus design guidelines.</ids:description>
+    <ids:purpose>Check whether candidate elements have IFC material assignments that can support automated material screening.</ids:purpose>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification name="Walls must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-WALL" description="Data-readiness requirement for all IfcWall elements, including elements not confirmed exterior.">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCWALL</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+    <ids:specification name="Windows must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-WINDOW" description="Data-readiness requirement for IfcWindow; a surface style alone may not satisfy this requirement.">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCWINDOW</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+    <ids:specification name="Plates must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-PLATE">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCPLATE</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+    <ids:specification name="Members must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-MEMBER">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCMEMBER</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+    <ids:specification name="Beams must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-BEAM">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCBEAM</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+    <ids:specification name="Coverings must have an IFC material assignment" ifcVersion="IFC4" identifier="A4-MAT-COVERING">
+      <ids:applicability><ids:entity><ids:name><ids:simpleValue>IFCCOVERING</ids:simpleValue></ids:name></ids:entity></ids:applicability>
+      <ids:requirements><ids:material cardinality="required"/></ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>
