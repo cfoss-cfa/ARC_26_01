@@ -1,7 +1,7 @@
 # README A4
 
-**DTU – Advanced BIM (41934)**  
-**Group: ARC_26_01 – Architecture - s234281 & s234297**
+**DTU - Advanced BIM (41934)**  
+**Group: ARC_26_01 - Architecture - s234281 & s234297**
 
 ## Purpose
 This Python tool identifies potential material and colour issues in facades using IFC parameters data. It supports the design review process by reducing manual checking and flagging elements that may need further attention.
