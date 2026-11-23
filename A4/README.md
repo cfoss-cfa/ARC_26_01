@@ -7,9 +7,13 @@
 This Python tool identifies potential material and colour issues in facades using IFC parameters data. It supports the design review process by reducing manual checking and flagging elements that may need further attention.
 
 ## Design Stage and Application
+
 **Advanced Building Design Level:** C - Design Development (proposed).
+
 **When to use:** After facade materials and colours have been assigned in the IFC model, and before the design is approved.
+
 **Disciplines involved:** Architecture
+
 The tool supports early identification of potential facade design issues, allowing the design team to review flagged elements before finalising the facade. It can also be used as a final design-stage check, to quickly get an overview of the status. 
 
 ## How It Works
