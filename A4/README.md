@@ -33,6 +33,14 @@ The tool automatically generates three files:
 - CSV (.csv): Results for all checked elements.
 - JSON (.json): Structured results for further use.
 
+The tool also displays progress and a summary of the results in Blender's system console, including: 
+
+- Number of checked elements
+- Classifications of elements
+- Number requiring manual review
+- The saved report locations
+- Execution time of the tool
+
 ## IFC Requirements
 The tool uses IFC material assignments, available surface colours and exterior classification information.
 
